@@ -1,9 +1,9 @@
-object Form1: TForm1
+object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 576
-  ClientWidth = 329
+  ClientHeight = 581
+  ClientWidth = 363
   Position = Designed
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -12,13 +12,13 @@ object Form1: TForm1
   DesignerMasterStyle = 0
   object Panel1: TPanel
     Align = Contents
-    Size.Width = 329.000000000000000000
-    Size.Height = 576.000000000000000000
+    Size.Width = 363.000000000000000000
+    Size.Height = 581.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     object Rectangle1: TRectangle
       Align = Top
-      Size.Width = 329.000000000000000000
+      Size.Width = 363.000000000000000000
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
       object btnMultiView: TSpeedButton
@@ -32,30 +32,32 @@ object Form1: TForm1
     end
     object TabControl1: TTabControl
       Align = Client
-      Size.Width = 329.000000000000000000
-      Size.Height = 526.000000000000000000
+      Size.Width = 363.000000000000000000
+      Size.Height = 531.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 0
       TabPosition = Dots
       Sizes = (
-        329s
-        526s
-        329s
-        526s
-        329s
-        526s)
+        363s
+        531s
+        363s
+        531s
+        363s
+        531s)
       object TabItem1: TTabItem
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
         Text = 'TabItem1'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
         object Label3: TLabel
           Position.X = 86.000000000000000000
           Position.Y = 184.000000000000000000
@@ -74,18 +76,18 @@ object Form1: TForm1
           Text = 'PassWord'
           TabOrder = 0
         end
-        object Edit1: TEdit
+        object edtID: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 3
+          TabOrder = 2
           Position.X = 142.000000000000000000
           Position.Y = 184.000000000000000000
           Size.Width = 113.000000000000000000
           Size.Height = 22.000000000000000000
           Size.PlatformDefault = False
         end
-        object Edit2: TEdit
+        object edtPW: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
-          TabOrder = 2
+          TabOrder = 3
           Password = True
           Position.X = 142.000000000000000000
           Position.Y = 232.000000000000000000
@@ -101,19 +103,92 @@ object Form1: TForm1
           Size.PlatformDefault = False
           TabOrder = 4
           Text = #47196#44536#51064
+          OnClick = Button1Click
+        end
+        object Label6: TLabel
+          Position.X = 64.000000000000000000
+          Position.Y = 336.000000000000000000
+          Size.Width = 209.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          Text = #10004#54924#50896#44032#51077#51008' '#44288#47532#51088#50640#44172' '#47928#51032#54616#49464#50836'.'
+          TabOrder = 5
         end
       end
       object TabItem2: TTabItem
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
         Text = 'TabItem2'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object ListBox1: TListBox
+          Align = Left
+          Size.Width = 185.000000000000000000
+          Size.Height = 531.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 181.000000000000000000
+          Viewport.Height = 487.000000000000000000
+          object ListBoxHeader1: TListBoxHeader
+            Size.Width = 181.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Label7: TLabel
+              Align = Client
+              StyledSettings = [Family, Style, FontColor]
+              Size.Width = 181.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.HorzAlign = Center
+              Text = #50724#45720' '#45216#51676
+              TabOrder = 0
+            end
+          end
+        end
+        object ListBox2: TListBox
+          Align = Right
+          Position.X = 184.000000000000000000
+          Size.Width = 179.000000000000000000
+          Size.Height = 531.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 175.000000000000000000
+          Viewport.Height = 487.000000000000000000
+          object ListBoxHeader2: TListBoxHeader
+            Size.Width = 175.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Label8: TLabel
+              Align = Client
+              StyledSettings = [Family, Style, FontColor]
+              Size.Width = 175.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.HorzAlign = Center
+              Text = #47588#52636
+              TabOrder = 0
+            end
+          end
+        end
       end
       object TabItem3: TTabItem
         CustomIcon = <
@@ -126,6 +201,8 @@ object Form1: TForm1
         StyleLookup = ''
         TabOrder = 0
         Text = 'TabItem3'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
       end
     end
   end
@@ -152,7 +229,6 @@ object Form1: TForm1
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
-      OnClick = Rectangle3Click
       object Image1: TImage
         MultiResBitmap = <
           item
@@ -313,8 +389,9 @@ object Form1: TForm1
       end
     end
   end
-  object DataSource1: TDataSource
-    Left = 272
-    Top = 16
+  object dsSalesReportManager: TDataSource
+    DataSet = MobileDM.cds
+    Left = 256
+    Top = 400
   end
 end

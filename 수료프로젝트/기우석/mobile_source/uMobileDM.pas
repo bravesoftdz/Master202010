@@ -5,14 +5,14 @@ interface
 uses
   System.SysUtils, System.Classes, Data.FMTBcd, Datasnap.DBClient,
   Datasnap.DSConnect, Data.DB, Data.SqlExpr, Data.DBXDataSnap, Data.DBXCommon,
-  IPPeerClient;
+  IPPeerClient, uMobile_Client;
 
 type
   TMobileDM = class(TDataModule)
     SQLConnection1: TSQLConnection;
     SqlServerMethod1: TSqlServerMethod;
     DSProviderConnection1: TDSProviderConnection;
-    ClientDataSet1: TClientDataSet;
+    cds: TClientDataSet;
   private
     { Private declarations }
   public
@@ -21,6 +21,8 @@ type
 
 var
   MobileDM: TMobileDM;
+
+  FEMPCODE, FEMPNAME, FCAFECODE: String;
 
 implementation
 

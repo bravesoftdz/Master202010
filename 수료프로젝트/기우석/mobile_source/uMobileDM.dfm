@@ -17,6 +17,7 @@ object MobileDM: TMobileDM
   end
   object SqlServerMethod1: TSqlServerMethod
     Params = <>
+    SQLConnection = SQLConnection1
     Left = 400
     Top = 72
   end
@@ -27,9 +28,11 @@ object MobileDM: TMobileDM
     Left = 192
     Top = 72
   end
-  object ClientDataSet1: TClientDataSet
+  object cds: TClientDataSet
     Aggregates = <>
     Params = <>
+    ProviderName = 'dspMobile'
+    RemoteServer = DSProviderConnection1
     Left = 296
     Top = 72
   end

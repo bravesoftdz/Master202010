@@ -76,6 +76,8 @@ type
     qrySalesReportsaleprice: TFloatField;
     qrySalesReportvat: TFloatField;
     qrySalesReportsales: TFloatField;
+    qryMobile: TFDQuery;
+    qryMobilesalesum: TFloatField;
     procedure DSServerModuleCreate(Sender: TObject);
     procedure qryCafeCalcFields(DataSet: TDataSet);
   private
@@ -97,6 +99,7 @@ type
     procedure SaveSalesDetail(pcafecode, slipno, pmenucode: string; punitprice, pcount: Integer; pmenutotal: Double);
     function GetCafeList: string;
     function GetStaffPositionList(pcafecode, pposition: string): Integer;
+    function Mobile(pdate, pcafecode: string): string;
 
   end;
 
@@ -346,7 +349,8 @@ begin
   qryLogin.Close;
   qryLogin.SQL.Clear;
   qryLogin.SQL.Add('select empcode, sname, cafecode from staff ');
-  qryLogin.SQL.Add('where id = :id and password = :password and onwork = ''1''');
+  qryLogin.SQL.Add('where id = :id and password = :password and');
+  qryLogin.SQL.Add('onwork = ''1'' and position in (''0'', ''1'')');
   qryLogin.ParamByName('id').AsString := pid;
   qryLogin.ParamByName('password').AsString := ppassword;
   qryLogin.Open;
@@ -361,6 +365,19 @@ begin
 
 end;
 
+
+function TServerMethods1.Mobile(pdate, pcafecode: string): string;
+begin
+  qryMobile.Close;
+  qryMobile.SQL.Clear;
+  qryMobile.SQL.Add('select sum(saleprice) salesum from sales_master');
+  qryMobile.SQL.Add('where sdate = :sdate and cafecode = :cafecode');
+  qryMobile.ParamByName('sdate').AsString := pdate;
+  qryMobile.ParamByName('cafecode').AsString := pcafecode;
+  qryMobile.Open;
+
+  Result := qryMobile.FieldByName('salesum').AsString;
+end;
 
 procedure TServerMethods1.qryCafeCalcFields(DataSet: TDataSet);
 begin

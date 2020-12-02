@@ -1,7 +1,7 @@
 //
 // Created by the DataSnap proxy generator.
-// 2020-12-02 오후 4:42:05
-// 
+// 2020-12-03 오전 12:04:12
+//
 
 unit uMobile_Client;
 
@@ -29,6 +29,7 @@ type
     FSaveSalesDetailCommand: TDBXCommand;
     FGetCafeListCommand: TDBXCommand;
     FGetStaffPositionListCommand: TDBXCommand;
+    FMobileCommand: TDBXCommand;
   public
     constructor Create(ADBXConnection: TDBXConnection); overload;
     constructor Create(ADBXConnection: TDBXConnection; AInstanceOwner: Boolean); overload;
@@ -50,6 +51,7 @@ type
     procedure SaveSalesDetail(pcafecode: string; slipno: string; pmenucode: string; punitprice: Integer; pcount: Integer; pmenutotal: Double);
     function GetCafeList: string;
     function GetStaffPositionList(pcafecode: string; pposition: string): Integer;
+    function Mobile(pdate: string; pcafecode: string): string;
   end;
 
 implementation
@@ -325,6 +327,21 @@ begin
   Result := FGetStaffPositionListCommand.Parameters[2].Value.GetInt32;
 end;
 
+function TServerMethods1Client.Mobile(pdate: string; pcafecode: string): string;
+begin
+  if FMobileCommand = nil then
+  begin
+    FMobileCommand := FDBXConnection.CreateCommand;
+    FMobileCommand.CommandType := TDBXCommandTypes.DSServerMethod;
+    FMobileCommand.Text := 'TServerMethods1.Mobile';
+    FMobileCommand.Prepare;
+  end;
+  FMobileCommand.Parameters[0].Value.SetWideString(pdate);
+  FMobileCommand.Parameters[1].Value.SetWideString(pcafecode);
+  FMobileCommand.ExecuteUpdate;
+  Result := FMobileCommand.Parameters[2].Value.GetWideString;
+end;
+
 
 constructor TServerMethods1Client.Create(ADBXConnection: TDBXConnection);
 begin
@@ -357,7 +374,9 @@ begin
   FSaveSalesDetailCommand.DisposeOf;
   FGetCafeListCommand.DisposeOf;
   FGetStaffPositionListCommand.DisposeOf;
+  FMobileCommand.DisposeOf;
   inherited;
 end;
 
 end.
+

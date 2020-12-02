@@ -26,7 +26,7 @@
     Active = True
     Aggregates = <>
     Params = <>
-    ProviderName = 'DatasetProvider1'
+    ProviderName = 'DataSetProvider1'
     RemoteServer = DSProviderConnection1
     Left = 312
     Top = 80

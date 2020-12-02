@@ -3,7 +3,7 @@ program Mobile_Project;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  MainForm in 'MainForm.pas' {Form1},
+  MainForm in 'MainForm.pas' {frmMain},
   uMobileDM in 'uMobileDM.pas' {MobileDM: TDataModule},
   Unit2 in 'Unit2.pas' {Form2},
   uMobile_Client in 'uMobile_Client.pas';
@@ -12,7 +12,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TMobileDM, MobileDM);
+  Application.CreateForm(TfrmMain, frmMain);
   Application.Run;
 end.

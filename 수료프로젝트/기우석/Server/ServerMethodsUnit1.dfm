@@ -144,6 +144,7 @@ object ServerMethods1: TServerMethods1
     Top = 360
   end
   object tbStaff: TFDTable
+    Active = True
     IndexFieldNames = 'empcode'
     Connection = FDConnection1
     UpdateOptions.UpdateTableName = 'dbmarek.staff'
@@ -223,6 +224,7 @@ object ServerMethods1: TServerMethods1
     Top = 448
   end
   object qryCafe: TFDQuery
+    Active = True
     OnCalcFields = qryCafeCalcFields
     Connection = FDConnection1
     SQL.Strings = (
@@ -609,5 +611,18 @@ object ServerMethods1: TServerMethods1
     DataSet = qrySalesTotalByCafe
     Left = 208
     Top = 624
+  end
+  object qryMobile: TFDQuery
+    IndexFieldNames = 'salesum'
+    Connection = FDConnection1
+    Left = 880
+    Top = 512
+    object qryMobilesalesum: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'salesum'
+      Origin = 'salesum'
+      ProviderFlags = []
+      ReadOnly = True
+    end
   end
 end

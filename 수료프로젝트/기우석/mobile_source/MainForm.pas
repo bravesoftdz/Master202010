@@ -6,10 +6,11 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.MultiView,
   FMX.StdCtrls, FMX.Controls.Presentation, FMX.Objects, Data.DB, FMX.Edit,
-  FMX.TabControl, uMobile_Client;
+  FMX.TabControl, uMobile_Client, System.Rtti, FMX.Grid.Style, FMX.Grid,
+  FMX.ScrollBox, FMX.ListBox, FMX.Layouts;
 
 type
-  TForm1 = class(TForm)
+  TfrmMain = class(TForm)
     Rectangle1: TRectangle;
     btnMultiView: TSpeedButton;
     Panel1: TPanel;
@@ -23,28 +24,35 @@ type
     Image4: TImage;
     Label2: TLabel;
     Label4: TLabel;
-    DataSource1: TDataSource;
+    Label1: TLabel;
+    dsSalesReportManager: TDataSource;
     TabControl1: TTabControl;
     TabItem1: TTabItem;
-    TabItem2: TTabItem;
-    Label1: TLabel;
-    TabItem3: TTabItem;
     Label3: TLabel;
     Label5: TLabel;
-    Edit1: TEdit;
-    Edit2: TEdit;
+    edtID: TEdit;
+    edtPW: TEdit;
     Button1: TButton;
-    procedure Rectangle3Click(Sender: TObject);
+    Label6: TLabel;
+    TabItem2: TTabItem;
+    ListBox1: TListBox;
+    ListBoxHeader1: TListBoxHeader;
+    TabItem3: TTabItem;
+    ListBox2: TListBox;
+    ListBoxHeader2: TListBoxHeader;
+    Label7: TLabel;
+    Label8: TLabel;
     procedure FormCreate(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
+    cafeClass: TServerMethods1Client;
   public
     { Public declarations }
-    cafeClass: TServerMethods1Client;
   end;
 
 var
-  Form1: TForm1;
+  frmMain: TfrmMain;
 
 implementation
 
@@ -54,16 +62,63 @@ uses Unit2, uMobileDM;
 
 
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure TfrmMain.Button1Click(Sender: TObject);
+var
+  Check: string;
+  code, Today, sDateTo, sDateFrom, sCafecode, str: string;
 begin
-  cafeClass := TServerMethods1Client.Create(uMobileDM
+  Check := '';
+  //Check := cafeClass.Loginidpw(edtID.Text, edtPW.Text);
+  Check := cafeClass.Loginidpw(edtID.Text, edtPW.Text);   //Result := sEmpcode + ':' + sSname + ':' + sCafecode;
 
-  TabControl1.TabIndex := 0;
-  TabControl1.Tabs[1].Enabled := False;
-  TabControl1.Tabs[2].Enabled := False;
+  code := Copy(Check, length(Check) - 1, 2);
+
+  if Check = '' then
+  begin
+    ShowMessage('아이디와 비밀번호가 틀립니다.');
+  end else
+  begin
+    TabControl1.Tabs[1].Visible := True;
+    TabControl1.Tabs[2].Visible := True;
+    TabControl1.ActiveTab := TabControl1.Tabs[1];
+    TabControl1.Tabs[0].Visible := False;
+  end;
+
+
+
+  Today := FormatDateTime('yyyy-mm-dd', Date);
+
+
+  ListBox1.Items.Add(Today);
+  str := cafeClass.Mobile('20201127', code);
+  if str = '' then
+  begin
+    ShowMessage('오늘 매출이 없습니다.');
+    ListBox2.Items.Add('0원');
+  end else
+  begin
+    ListBox2.Items.Add(str + '원');
+  end;
+
+
+
+
+end;
+
+procedure TfrmMain.FormCreate(Sender: TObject);
+begin
+  cafeClass := TServerMethods1Client.Create(MobileDM.SQLConnection1.DBXConnection);
+  TabControl1.ActiveTab := TabControl1.Tabs[0];
+  //TabControl1.TabIndex := 0;
+  TabControl1.Tabs[1].Visible := False;
+  TabControl1.Tabs[2].Visible := False;
   btnMultiView.Enabled := False;
 
-  // TabControl1.TabStop;
+
+
 end;
+
+
+
 
 end.

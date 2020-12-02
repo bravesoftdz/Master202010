@@ -25,7 +25,6 @@ object frmMenuSales: TfrmMenuSales
     Height = 530
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 1105
     object Panel3: TPanel
       Left = 1
       Top = 1
@@ -33,7 +32,6 @@ object frmMenuSales: TfrmMenuSales
       Height = 54
       Align = alTop
       TabOrder = 0
-      ExplicitWidth = 1103
       DesignSize = (
         931
         54)
@@ -75,7 +73,6 @@ object frmMenuSales: TfrmMenuSales
         Caption = #51312#54924
         TabOrder = 1
         OnClick = btnSearchClick
-        ExplicitLeft = 885
       end
       object dtpTo: TDateTimePicker
         Left = 328
@@ -103,7 +100,6 @@ object frmMenuSales: TfrmMenuSales
       Height = 474
       Align = alClient
       TabOrder = 1
-      ExplicitWidth = 635
       object DBChart1: TDBChart
         Left = 1
         Top = 1
@@ -115,7 +111,6 @@ object frmMenuSales: TfrmMenuSales
         View3DWalls = False
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 629
         DefaultCanvas = 'TGDIPlusCanvas'
         PrintMargins = (
           15
@@ -150,7 +145,6 @@ object frmMenuSales: TfrmMenuSales
       Height = 474
       Align = alRight
       TabOrder = 2
-      ExplicitLeft = 880
       object DBGrid1: TDBGrid
         Left = 1
         Top = 1

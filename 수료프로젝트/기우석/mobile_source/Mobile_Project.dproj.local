@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.016,D:\Dev\Delph\개인 프로젝트\mobile_source\Mobile_Project.dproj=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.902,D:\Dev\Delph\개인 프로젝트\mobile_source\MainForm.fmx=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.923,=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.902,C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas=D:\Dev\Delph\개인 프로젝트\mobile_source\MainForm.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.105,D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit1.pas=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\uMobileDM.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.791,D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit1.pas=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\uMobile_Client.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.158,=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.016,C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Project1.dproj=D:\Dev\Delph\개인 프로젝트\mobile_source\Mobile_Project.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.902,C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.fmx=D:\Dev\Delph\개인 프로젝트\mobile_source\MainForm.fmx</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.192,=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit2.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.029,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.902,D:\Dev\Delph\개인 프로젝트\mobile_source\MainForm.pas=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2020-12-02 16:09:44.923,=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit1.pas</Transaction>
-    <Transaction>2020-12-02 16:10:03.105,D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\uMobileDM.dfm=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit1.dfm</Transaction>
-    <Transaction>2020-12-02 16:10:03.105,D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\uMobileDM.pas=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit1.pas</Transaction>
-    <Transaction>2020-12-02 16:12:32.192,=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit2.pas</Transaction>
-    <Transaction>2020-12-02 16:42:05.158,=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit1.pas</Transaction>
-    <Transaction>2020-12-02 16:42:43.791,D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\uMobile_Client.pas=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.105,D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Unit1.dfm=D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\uMobileDM.dfm</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5"/>

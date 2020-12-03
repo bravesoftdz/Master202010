@@ -79,9 +79,13 @@ begin
   cafeClass.UpdateStaff(dbedtName.Text, dbedtCafecode.Text,
                         dbedtPosition.Text, CheckOnWork, sEmpcode);
 
+
   DM.cdsUpdateStaff.Post;
-//  DM.cdsUpdateStaff.ApplyUpdates(-1);
-  DM.cdsUpdateStaff.Refresh;
+  //DM.cdsUpdateStaff.Filtered := True;
+  DM.cdsUpdateStaff.ApplyUpdates(-1);
+  ShowMessage('저장하였습니다.');
+
+  //DM.cdsUpdateStaff.Refresh;
 
   DM.cdsUpdateStaff.EnableControls;
 end;
@@ -123,6 +127,9 @@ begin
     DM.cdsUpdateStaff.Filter := 'cafecode = ' + FCAFECODE;
     DM.cdsUpdateStaff.Filtered := True;
   end;
+
+  dsStaff.DataSet.Refresh;
+
 end;
 
 end.

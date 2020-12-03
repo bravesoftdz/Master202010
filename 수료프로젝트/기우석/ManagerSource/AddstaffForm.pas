@@ -41,7 +41,7 @@ implementation
 
 {$R *.dfm}
 
-uses uDm;
+uses uDm, UpdateStaffForm;
 
 procedure TfrmAddStaff.btnRegisterClick(Sender: TObject);
 var
@@ -69,6 +69,7 @@ begin
     sEmpdate := FormatDateTime('yyyymmdd', dtpEmpdate.DateTime);
     cafeClass.AddStaff(sCafecode, edtName.Text, edtID.Text, edtPW.Text,
       sEmpdate, IntToStr(rdgPosition.ItemIndex), Yearof(dtpEmpdate.DateTime));
+
     Close;
   end;
 end;

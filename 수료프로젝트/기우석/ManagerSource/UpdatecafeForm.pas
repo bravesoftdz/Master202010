@@ -82,11 +82,10 @@ begin
   cafeClass.UpdateCafe(dbedtCafecode.Text, dbedtCafename.Text, dbedtPhone.Text, ClosedCheck);
 
   DM.cdsUpdateCafe.Post;
+  DM.cdsUpdateCafe.ApplyUpdates(-1);
+  //DM.cdsUpdateCafe.Refresh;
   ShowMessage('저장하였습니다.');
-  //DM.cdsUpdateCafe.ApplyUpdates(-1);
-  DM.cdsUpdateCafe.Refresh;
-
-
+ // DM.cdsUpdateCafe.EnableControls;
 end;
 
 procedure TfrmUpdatecafe.btnSearchClick(Sender: TObject);

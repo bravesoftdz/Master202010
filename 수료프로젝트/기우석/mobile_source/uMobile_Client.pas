@@ -1,6 +1,6 @@
 //
 // Created by the DataSnap proxy generator.
-// 2020-12-03 오전 12:04:12
+// 2020-12-03 오전 9:51:44
 //
 
 unit uMobile_Client;

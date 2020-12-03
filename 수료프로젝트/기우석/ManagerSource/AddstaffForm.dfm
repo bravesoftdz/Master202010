@@ -70,6 +70,7 @@ object frmAddStaff: TfrmAddStaff
     Top = 159
     Width = 121
     Height = 21
+    PasswordChar = '*'
     TabOrder = 1
   end
   object edtPWC: TEdit
@@ -77,6 +78,7 @@ object frmAddStaff: TfrmAddStaff
     Top = 191
     Width = 121
     Height = 21
+    PasswordChar = '*'
     TabOrder = 2
   end
   object rdgPosition: TRadioGroup

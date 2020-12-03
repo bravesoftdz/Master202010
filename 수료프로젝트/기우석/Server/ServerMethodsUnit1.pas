@@ -9,7 +9,7 @@ uses System.SysUtils, System.Classes, System.Json,
   FireDAC.Phys, FireDAC.Phys.MySQL, FireDAC.Phys.MySQLDef, FireDAC.Stan.Param,
   FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.VCLUI.Wait,
   FireDAC.Comp.UI, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
-  Datasnap.Provider;
+  Datasnap.Provider, Vcl.Forms;
 
 type
   TServerMethods1 = class(TDSServerModule)
@@ -122,7 +122,7 @@ begin
 end;
 
 function TServerMethods1.SaveSales(pdate, ptime, pcafecode, pposno: string;
-  psaleprice: Double): string;
+  psaleprice: Double): string;   // sales_master 테이블에 결제 정보 저장.
 var
   iseq: Integer;
   sSlipno: String;
@@ -158,7 +158,6 @@ begin
   qrySaveSales.ExecSQL;
 
   Result := sSlipno;
-
 end;
 
 procedure TServerMethods1.SaveSalesDetail(pcafecode, slipno, pmenucode: string;
@@ -200,6 +199,7 @@ begin
   qryUpdateStaff.ExecSQL;
 end;
 
+// 지점 추가 코드.
 procedure TServerMethods1.AddCafe(pcafename, pphone, pCafemenu: string);
 var
   cafecode: string;
@@ -269,6 +269,8 @@ end;
 
 procedure TServerMethods1.DSServerModuleCreate(Sender: TObject);
 begin
+  //FDPhysMySQLDriverLink1.VendorLib := ExtractFilePath(Application.ExeName + 'libmysql.dll');
+
   if not FDConnection1.Connected then
     FDConnection1.Connected := True;
 end;

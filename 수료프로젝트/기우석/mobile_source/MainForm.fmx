@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = #47700#51064#54268
   ClientHeight = 581
   ClientWidth = 363
   Position = Designed
@@ -23,7 +23,7 @@ object frmMain: TfrmMain
       Size.PlatformDefault = False
       object btnMultiView: TSpeedButton
         Align = Left
-        Size.Width = 57.000000000000000000
+        Size.Width = 48.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = 'detailstoolbutton'
@@ -35,12 +35,11 @@ object frmMain: TfrmMain
       Size.Width = 363.000000000000000000
       Size.Height = 531.000000000000000000
       Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
       TabIndex = 1
       TabOrder = 0
       TabPosition = Dots
       Sizes = (
-        363s
-        531s
         363s
         531s
         363s
@@ -82,7 +81,7 @@ object frmMain: TfrmMain
           Position.X = 142.000000000000000000
           Position.Y = 184.000000000000000000
           Size.Width = 113.000000000000000000
-          Size.Height = 22.000000000000000000
+          Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
         end
         object edtPW: TEdit
@@ -92,7 +91,7 @@ object frmMain: TfrmMain
           Position.X = 142.000000000000000000
           Position.Y = 232.000000000000000000
           Size.Width = 113.000000000000000000
-          Size.Height = 22.000000000000000000
+          Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
         end
         object Button1: TButton
@@ -129,8 +128,8 @@ object frmMain: TfrmMain
         ExplicitSize.cx = 8.000000000000000000
         ExplicitSize.cy = 8.000000000000000000
         object ListBox1: TListBox
-          Align = Left
-          Size.Width = 185.000000000000000000
+          Align = Client
+          Size.Width = 363.000000000000000000
           Size.Height = 531.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
@@ -138,71 +137,70 @@ object frmMain: TfrmMain
           DefaultItemStyles.ItemStyle = ''
           DefaultItemStyles.GroupHeaderStyle = ''
           DefaultItemStyles.GroupFooterStyle = ''
-          Viewport.Width = 181.000000000000000000
-          Viewport.Height = 487.000000000000000000
+          Viewport.Width = 359.000000000000000000
+          Viewport.Height = 479.000000000000000000
+          object Rectangle5: TRectangle
+            Position.X = 72.000000000000000000
+            Position.Y = 80.000000000000000000
+            Size.Width = 225.000000000000000000
+            Size.Height = 81.000000000000000000
+            Size.PlatformDefault = False
+            object Label8: TLabel
+              Align = Left
+              StyledSettings = [Family, Style, FontColor]
+              Size.Width = 73.000000000000000000
+              Size.Height = 81.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.HorzAlign = Center
+              Text = #47588#52636' :'
+              TabOrder = 0
+            end
+            object Label9: TLabel
+              Align = Client
+              StyledSettings = [Family, Style, FontColor]
+              Size.Width = 152.000000000000000000
+              Size.Height = 81.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 20.000000000000000000
+              TextSettings.HorzAlign = Center
+              TabOrder = 1
+            end
+          end
           object ListBoxHeader1: TListBoxHeader
-            Size.Width = 181.000000000000000000
-            Size.Height = 40.000000000000000000
+            Size.Width = 359.000000000000000000
+            Size.Height = 48.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
             object Label7: TLabel
               Align = Client
               StyledSettings = [Family, Style, FontColor]
-              Size.Width = 181.000000000000000000
-              Size.Height = 40.000000000000000000
+              Size.Width = 62.000000000000000000
+              Size.Height = 48.000000000000000000
               Size.PlatformDefault = False
               TextSettings.Font.Size = 20.000000000000000000
               TextSettings.HorzAlign = Center
-              Text = #50724#45720' '#45216#51676
               TabOrder = 0
             end
-          end
-        end
-        object ListBox2: TListBox
-          Align = Right
-          Position.X = 184.000000000000000000
-          Size.Width = 179.000000000000000000
-          Size.Height = 531.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 1
-          DisableFocusEffect = True
-          DefaultItemStyles.ItemStyle = ''
-          DefaultItemStyles.GroupHeaderStyle = ''
-          DefaultItemStyles.GroupFooterStyle = ''
-          Viewport.Width = 175.000000000000000000
-          Viewport.Height = 487.000000000000000000
-          object ListBoxHeader2: TListBoxHeader
-            Size.Width = 175.000000000000000000
-            Size.Height = 40.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 0
-            object Label8: TLabel
+            object edtDate: TDateEdit
+              Date = 44168.000000000000000000
+              Align = Left
+              Size.Width = 297.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+            object Button2: TButton
               Align = Client
-              StyledSettings = [Family, Style, FontColor]
-              Size.Width = 175.000000000000000000
-              Size.Height = 40.000000000000000000
+              Size.Width = 62.000000000000000000
+              Size.Height = 48.000000000000000000
               Size.PlatformDefault = False
-              TextSettings.Font.Size = 20.000000000000000000
-              TextSettings.HorzAlign = Center
-              Text = #47588#52636
-              TabOrder = 0
+              TabOrder = 2
+              Text = #51312#54924
+              OnClick = Button2Click
             end
           end
         end
-      end
-      object TabItem3: TTabItem
-        CustomIcon = <
-          item
-          end>
-        IsSelected = False
-        Size.Width = 8.000000000000000000
-        Size.Height = 8.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = ''
-        TabOrder = 0
-        Text = 'TabItem3'
-        ExplicitSize.cx = 8.000000000000000000
-        ExplicitSize.cy = 8.000000000000000000
       end
     end
   end
@@ -211,7 +209,7 @@ object frmMain: TfrmMain
     Mode = Drawer
     NavigationPaneOptions.CollapsedWidth = 217.000000000000000000
     Size.Width = 257.000000000000000000
-    Size.Height = 576.000000000000000000
+    Size.Height = 581.000000000000000000
     Size.PlatformDefault = False
     Visible = False
     TabOrder = 2
@@ -391,7 +389,7 @@ object frmMain: TfrmMain
   end
   object dsSalesReportManager: TDataSource
     DataSet = MobileDM.cds
-    Left = 256
-    Top = 400
+    Left = 208
+    Top = 480
   end
 end

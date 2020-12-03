@@ -5,7 +5,6 @@ uses
   FMX.Forms,
   MainForm in 'MainForm.pas' {frmMain},
   uMobileDM in 'uMobileDM.pas' {MobileDM: TDataModule},
-  Unit2 in 'Unit2.pas' {Form2},
   uMobile_Client in 'uMobile_Client.pas';
 
 {$R *.res}

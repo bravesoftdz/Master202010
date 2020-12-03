@@ -19,8 +19,8 @@ object ServerMethods1: TServerMethods1
   object qryAddCafe: TFDQuery
     Connection = FDConnection1
     SQL.Strings = (
-      'insert into cafe (cafecode, cafename, phone, open)'
-      'values (:cafecode, :cafename, :phone, :open);')
+      'insert into cafe (cafecode, cafename, phone, closed)'
+      'values (:cafecode, :cafename, :phone, :closed);')
     Left = 64
     Top = 144
     ParamData = <
@@ -38,7 +38,7 @@ object ServerMethods1: TServerMethods1
         ParamType = ptInput
       end
       item
-        Name = 'OPEN'
+        Name = 'CLOSED'
         ParamType = ptInput
       end>
   end
@@ -144,7 +144,6 @@ object ServerMethods1: TServerMethods1
     Top = 360
   end
   object tbStaff: TFDTable
-    Active = True
     IndexFieldNames = 'empcode'
     Connection = FDConnection1
     UpdateOptions.UpdateTableName = 'dbmarek.staff'
@@ -224,7 +223,6 @@ object ServerMethods1: TServerMethods1
     Top = 448
   end
   object qryCafe: TFDQuery
-    Active = True
     OnCalcFields = qryCafeCalcFields
     Connection = FDConnection1
     SQL.Strings = (
@@ -528,7 +526,6 @@ object ServerMethods1: TServerMethods1
     Top = 696
   end
   object qrySalesTotal: TFDQuery
-    Active = True
     Connection = FDConnection1
     SQL.Strings = (
       'select sdate, sum(saleprice) salesum from sales_master'
@@ -564,7 +561,6 @@ object ServerMethods1: TServerMethods1
     end
   end
   object qrySalesTotalByCafe: TFDQuery
-    Active = True
     Connection = FDConnection1
     SQL.Strings = (
       'select sdate, sum(saleprice) salesum from sales_master'

@@ -77,7 +77,6 @@ object frmUpdateStaff: TfrmUpdateStaff
           Expanded = False
           FieldName = 'empdate'
           Title.Caption = #51077#49324#45216#51676
-          Width = 64
           Visible = True
         end
         item
@@ -88,20 +87,17 @@ object frmUpdateStaff: TfrmUpdateStaff
         item
           Expanded = False
           FieldName = 'password'
-          Width = -1
           Visible = False
         end
         item
           Expanded = False
           FieldName = 'position'
-          Width = -1
           Visible = False
         end
         item
           Expanded = False
           FieldName = 'cafecode'
           Title.Caption = #45812#45817#51648#51216
-          Width = 64
           Visible = True
         end
         item
@@ -118,20 +114,17 @@ object frmUpdateStaff: TfrmUpdateStaff
           Expanded = False
           FieldName = 'sname'
           Title.Caption = #51649#50896#51060#47492
-          Width = 64
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'position_name'
           Title.Caption = #51649#52293
-          Width = 64
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'onwork'
-          Width = -1
           Visible = False
         end
         item

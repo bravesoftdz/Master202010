@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.156,C:\Users\moto4\Desktop\과제\20_Task\M2\trunk\Project_Prototype.dproj=C:\Users\moto4\Desktop\과제\20_Task\M2\trunk\PhoneMasterDetailApplication.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

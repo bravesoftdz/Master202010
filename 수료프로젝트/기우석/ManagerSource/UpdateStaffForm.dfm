@@ -12,6 +12,7 @@ object frmUpdateStaff: TfrmUpdateStaff
   Font.Style = []
   OldCreateOrder = False
   Position = poScreenCenter
+  OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
   DesignSize = (

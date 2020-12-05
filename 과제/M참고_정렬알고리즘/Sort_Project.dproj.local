@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.537,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.535,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.537,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.098,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.951,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.732,C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas=D:\Dev\Delph\제출 Thread\uSort.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.125,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.951,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.732,D:\Dev\Delph\제출 Thread\uSort.pas=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.272,D:\Dev\Delph\제출 Thread\Sort_Project.dproj=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.194,D:\Dev\Delph\제출 Thread\uSortThread.pas=D:\Dev\Delph\제출 Thread\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.006,=D:\Dev\Delph\제출 Thread\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.194,D:\Dev\Delph\제출 Thread\Unit1.pas=D:\Dev\Delph\제출 Thread\uSortThread.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.732,C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.dfm=D:\Dev\Delph\제출 Thread\uSort.dfm</Transaction>
     <Transaction>1899-12-30 00:00:00.000.842,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.272,C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Project1.dproj=D:\Dev\Delph\제출 Thread\Sort_Project.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.732,D:\Dev\Delph\제출 Thread\uSort.dfm=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

@@ -34,6 +34,7 @@ type
     procedure edtSearchStaffKeyPress(Sender: TObject; var Key: Char);
     procedure btnSearchClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
 
@@ -73,7 +74,7 @@ begin
 
   sEmpcode := dsStaff.DataSet.FieldByName('empcode').AsString;
 
-  DM.cdsUpdateStaff.DisableControls;
+  //DM.cdsUpdateStaff.DisableControls;
 
   DM.cdsUpdateStaff.Edit;
   cafeClass.UpdateStaff(dbedtName.Text, dbedtCafecode.Text,
@@ -81,10 +82,8 @@ begin
 
 
   DM.cdsUpdateStaff.Post;
-  //DM.cdsUpdateStaff.Filtered := True;
   DM.cdsUpdateStaff.ApplyUpdates(-1);
   ShowMessage('저장하였습니다.');
-
   //DM.cdsUpdateStaff.Refresh;
 
   DM.cdsUpdateStaff.EnableControls;
@@ -115,9 +114,18 @@ begin
   DM.cdsUpdateStaff.Filtered := (Filter <> '');
 end;
 
+procedure TfrmUpdateStaff.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  cafeClass.Free;
+end;
+
 procedure TfrmUpdateStaff.FormCreate(Sender: TObject);
 begin
   cafeClass := TServerMethods1Client.Create(DM.SQLConnection1.DBXConnection);
+
+  DM.cdsUpdateStaff.ApplyUpdates(-1);
+  DM.cdsUpdateStaff.Refresh;
+
 end;
 
 procedure TfrmUpdateStaff.FormShow(Sender: TObject);
@@ -127,6 +135,7 @@ begin
     DM.cdsUpdateStaff.Filter := 'cafecode = ' + FCAFECODE;
     DM.cdsUpdateStaff.Filtered := True;
   end;
+
 
   dsStaff.DataSet.Refresh;
 

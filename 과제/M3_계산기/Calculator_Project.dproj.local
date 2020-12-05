@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.594,C:\Users\moto4\Desktop\moto4321\20_Task\M3\Calculator.dfm=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.855,=C:\Users\moto4\Desktop\moto4321\20_Task\M3\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.319,C:\Users\moto4\Desktop\moto4321\20_Task\M3\Unit2.pas=C:\Users\moto4\Desktop\moto4321\20_Task\M3\Splash.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.844,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.105,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.088,C:\Users\moto4\Desktop\moto4321\20_Task\M3\Calculator_Project.dproj=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.305,C:\Users\moto4\Desktop\moto4321\20_Task\M3\NumberEdit.pas=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.319,C:\Users\moto4\Desktop\moto4321\20_Task\M3\Unit2.dfm=C:\Users\moto4\Desktop\moto4321\20_Task\M3\Splash.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.594,C:\Users\moto4\Desktop\moto4321\20_Task\M3\Calculator.pas=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.683,=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.305,C:\Users\moto4\Desktop\moto4321\20_Task\M3\NumberEdit.dfm=C:\Users\moto4\OneDrive\문서\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.772,C:\Users\moto4\Desktop\moto4321\20_Task\M3\NumberEdit.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

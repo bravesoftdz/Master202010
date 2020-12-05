@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.177,D:\Dev\Delph\Master202010\수료프로젝트\기우석\POS_GROUP.groupproj=D:\Dev\Delph\Master202010\수료프로젝트\기우석\ProjectGroup1.groupproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.177,D:\Dev\Delph\Master202010\수료프로젝트\기우석\ProjectGroup1.groupproj=D:\Dev\Delph\Master202010\수료프로젝트\기우석\POS_GROUP.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="D:\Dev\Delph\Master202010\수료프로젝트\기우석\mobile_source\Mobile_Project.dproj"/>
+		<Projects ActiveProject="D:\Dev\Delph\Master202010\수료프로젝트\기우석\Server\Server.dproj"/>
 	</Default.Personality>
 </BorlandProject>

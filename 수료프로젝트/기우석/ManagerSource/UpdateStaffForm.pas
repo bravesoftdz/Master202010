@@ -82,7 +82,7 @@ begin
 
 
   DM.cdsUpdateStaff.Post;
-  DM.cdsUpdateStaff.ApplyUpdates(-1);
+  //DM.cdsUpdateStaff.ApplyUpdates(-1);
   ShowMessage('저장하였습니다.');
   //DM.cdsUpdateStaff.Refresh;
 
@@ -123,8 +123,8 @@ procedure TfrmUpdateStaff.FormCreate(Sender: TObject);
 begin
   cafeClass := TServerMethods1Client.Create(DM.SQLConnection1.DBXConnection);
 
-  DM.cdsUpdateStaff.ApplyUpdates(-1);
-  DM.cdsUpdateStaff.Refresh;
+//  DM.cdsUpdateStaff.ApplyUpdates(-1);
+//  DM.cdsUpdateStaff.Refresh;
 
 end;
 
@@ -137,7 +137,7 @@ begin
   end;
 
 
-  dsStaff.DataSet.Refresh;
+  //dsStaff.DataSet.Refresh;
 
 end;
 

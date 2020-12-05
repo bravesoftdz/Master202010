@@ -1,32 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.392,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.855,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.593,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.556,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.358,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.011,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.843,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.590,D:\Wooseok\Server1\ServerMethodsUnit1.dfm=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.897,D:\Wooseok\Server1\Server.dproj=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.590,D:\Wooseok\Server1\ServerMethodsUnit1.pas=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.045,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.621,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.743,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.028,D:\Wooseok\Server1\MainUnit.pas=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.989,D:\Wooseok\Server1\ServerContainerUnit1.dfm=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.769,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.989,D:\Wooseok\Server1\ServerContainerUnit1.pas=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.582,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.028,D:\Wooseok\Server1\MainUnit.dfm=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>1899-12-30 00:00:00.000.051,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.662,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.482,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.621,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.743,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.028,C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Wooseok\Server1\MainUnit.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.038,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.769,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.989,C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas=D:\Wooseok\Server1\ServerContainerUnit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.590,C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.dfm=D:\Wooseok\Server1\ServerMethodsUnit1.dfm</Transaction>
     <Transaction>1899-12-30 00:00:00.000.828,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.075,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.657,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.582,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.989,C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.dfm=D:\Wooseok\Server1\ServerContainerUnit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.392,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.897,C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Wooseok\Server1\Server.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.028,C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Wooseok\Server1\MainUnit.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.590,C:\Users\xu170\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas=D:\Wooseok\Server1\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.855,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.011,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.843,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.045,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.593,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.556,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.358,=C:\Users\xu170\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="MainUnit.pas"/>

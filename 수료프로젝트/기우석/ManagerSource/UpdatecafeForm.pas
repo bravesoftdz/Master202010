@@ -82,8 +82,8 @@ begin
   cafeClass.UpdateCafe(dbedtCafecode.Text, dbedtCafename.Text, dbedtPhone.Text, ClosedCheck);
 
   DM.cdsUpdateCafe.Post;
-  DM.cdsUpdateCafe.ApplyUpdates(-1);
-  //DM.cdsUpdateCafe.Refresh;
+ // DM.cdsUpdateCafe.ApplyUpdates(-1);
+ // DM.cdsUpdateCafe.Refresh;
   ShowMessage('저장하였습니다.');
  // DM.cdsUpdateCafe.EnableControls;
 end;
@@ -133,8 +133,8 @@ procedure TfrmUpdatecafe.FormCreate(Sender: TObject);
 begin
   cafeClass := TServerMethods1Client.Create(DM.SQLConnection1.DBXConnection);
 
-  DM.cdsUpdateCafe.ApplyUpdates(-1);
-  DM.cdsUpdateCafe.Refresh;
+//  DM.cdsUpdateCafe.ApplyUpdates(-1);
+//  DM.cdsUpdateCafe.Refresh;
 end;
 
 procedure TfrmUpdatecafe.FormDestroy(Sender: TObject);
@@ -144,7 +144,8 @@ end;
 
 procedure TfrmUpdatecafe.FormShow(Sender: TObject);
 begin
-  DM.cdsUpdateCafe.Refresh;
+//  DM.cdsUpdateCafe.ApplyUpdates(-1);
+//  DM.cdsUpdateCafe.Refresh;
 end;
 
 end.
